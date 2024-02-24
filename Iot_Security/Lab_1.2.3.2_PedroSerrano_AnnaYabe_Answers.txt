@@ -1,0 +1,11 @@
+Back in kali terminal, at the terminal prompt, type ip akali@kali:~# ip aWhat IP address was assigned to the VM eth0 interface? 
+R: Is 192.168.64.3
+
+IP address of the Raspberry Pi: 203.0.113.40
+
+Start and log into the Metasploitable VM. Notice the displayed messages. What is the login credential?
+R: msfadmin-msfadmin
+
+What is the IP address assigned toMetasploitable VM? What was the command used to determine the IP address?
+R: ifconfig, 192.168.64.5
+

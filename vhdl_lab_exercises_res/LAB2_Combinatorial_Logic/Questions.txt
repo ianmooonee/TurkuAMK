@@ -1,0 +1,10 @@
+1: It used 5 LUTs.
+
+2: There were no registers used.
+
+3: 14 ports have been defined. Yes, it matches.
+
+4: The elaborated design shows us the implementation in terms of logic. We can see all the logical elements, as well as the connection between them and so on.
+   The syntesized design shows us a netlist, witch describes the components, connectivity, placement and routing of the circuit.
+
+5: There were no timing requirements that needed to be met as we didn't specify it.

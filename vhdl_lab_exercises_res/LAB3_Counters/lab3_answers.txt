@@ -1,0 +1,59 @@
+1: int_a=int_b=255
+   int_a=2^32
+   int_b=2^32
+
+2: 13 flip flops were used.
+
+3: We use 8 for int_a and use 8 for int_b we use 5, giving the total of 13.
+
+4: It throws an error because it overflows the int_b, which is supposed to not go over 31, but since we have no limitations it tries to do so.
+
+5: Uses 4 LUTs and 13 flip-flops.
+
+6: int_a seems to not match, but it does, since it only uses 8 out of the 31 that it shows.
+
+7: Yes, it does match.
+
+8: ja goes up to 255 and jb to 31, as we were expecting according to the limitations of the variables. 
+
+9: It did not change, still need the same resources to represent 25.
+
+10: Ja does meet, but Jb still goes till 31, when I thought it would stop at 25, so it uses all the bits it can, even tho we limit it at 25 and goes up till 31.
+
+11: It does pass without errors.
+
+12: The maximun value of jb is 25, and at 25 wraps over to 0.
+
+13: It now has a multiplexer to control jb value.
+
+14: It does.
+
+15: Yes, resources remain the same.
+
+16: It has 8 bits of output, because we defined it to have a range from 0 to 255, so it needs 8 bits to be able to represent that.
+
+17: 4 LUTs and 13 registers, as expected.
+
+18: Yes, it got optimized to only use 13, which is what the code really needs, not the whole flip-flops it showed in the design.
+
+19: The timming requirement is 8ns.
+
+20: It is 5.618ns. Yes, it does, with 1.843ns.
+
+
+Frequency of the LSb (least significant bit) on jb: around 62.51MHz
+
+Frequency of the MSb (most significant bit) on jb: around 4.8MHz
+
+Frequency of the MSb (most significant bit) on ja: around 488.3kHz 
+
+Pulse ratio of the MSb on jb: around 38.80% positive duty cycle
+
+Pulse ratio of the Msb on ja: around 50.25% positive duty cycle
+
+
+Q19: Based on the measurement results, what is the frequency of sysclk?
+R: Is close to 125MHz, which was expected. If we multiply the MSb of Jb by 26, we get 124.8.
+
+Q20: Explain the pulse ratio of MSb of jb. 
+R: Since we are counting to 25, we get only around 38% od positive duty cycle, since it gets resetes after.

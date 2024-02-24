@@ -1,0 +1,7 @@
+lab*/*
+!lab*/Source/
+
+!lab*/*.xdc
+!lab*/*.xpr
+!lab*/*.vhd
+!lab*/*.txt
