@@ -1,0 +1,10 @@
+onbreak resume
+onerror resume
+vsim -voptargs=+acc work.digital_filter_implementation_tb
+add wave sim:/digital_filter_implementation_tb/u_digital_filter_implementation/clk
+add wave sim:/digital_filter_implementation_tb/u_digital_filter_implementation/clk_enable
+add wave sim:/digital_filter_implementation_tb/u_digital_filter_implementation/reset
+add wave sim:/digital_filter_implementation_tb/u_digital_filter_implementation/data_in
+add wave sim:/digital_filter_implementation_tb/u_digital_filter_implementation/data_out
+add wave sim:/digital_filter_implementation_tb/data_out_ref
+run -all
