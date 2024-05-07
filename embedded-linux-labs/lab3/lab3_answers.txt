@@ -1,0 +1,22 @@
+2. Change the loop delay to 1 millisecond (1000 us). Google for usleep().
+	-Measure the cycle time: 2.186ms
+	-Measure the jitter: avera around 42us and peak around 326us
+	-What would you say about the quality of such "generated clock"?: It's a bad clock, due 			 								to the jitter it 											has.
+
+3. Change the loop delay to 1us and perform the same
+	-What is the true cycle time now?: 147.2us
+
+4. Remove the printf()-call (comment it out)
+	-What is the true cycle time now?: 146.8us
+	
+5. Remove the 1us delay (comment it out)
+	What is the true cycle time now?: 4.760us
+
+6. Add the printf back
+	What are your observations?: The cycle time went up to 6.229us.
+
+7. Add the following line after printf()
+	-How does the situation change?: The cycle tome went up again to double the time, now 							being 12.64us.
+	
+8.Comment out the fflush()-call and now run the the code directly in RasPi
+	What is the cycle time / jitter now?: 6.336us / 1.229us

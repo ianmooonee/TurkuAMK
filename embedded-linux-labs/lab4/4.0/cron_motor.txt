@@ -1,0 +1,2 @@
+*/10 * * * * /home/pi/lab4.0-ledoff
+*/30 * * * * /home/pi/lab4.0-pump

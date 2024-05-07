@@ -1,0 +1,9 @@
+Active: failed (Result: exit-code) since Thu 2024-03-07 09:26:07 GMT; 5min ago
+1048 ExecStartPre=/usr/sbin/lighttpd -tt -f /etc/lighttpd/lighttpd.conf (code=exited, status=255/EXCEPTION)
+
+Mar 07 09:26:07 vitor systemd[1]: lighttpd.service: Start request repeated too quickly.
+Mar 07 09:26:07 vitor systemd[1]: lighttpd.service: Failed with result 'exit-code'.
+Mar 07 09:26:07 vitor systemd[1]: Failed to start lighttpd.service - Lighttpd Daemon.
+
+2024-03-07 09:26:03: (server.c.1057) [note] graceful shutdown started
+2024-03-07 09:26:03: (server.c.2078) server stopped by UID = 0 PID = 1023

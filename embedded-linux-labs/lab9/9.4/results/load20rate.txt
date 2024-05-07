@@ -1,0 +1,19 @@
+I was able to achieve 20% load with the following html script below. It polls the page every 4ms, meaning 25 per second and I was using around 6 clients.
+<script>
+var apiTimeout = setTimeout(fetchData, 400);
+
+function fetchData(){
+    fetch('https://'+window.location.hostname+'/cgi-bin/lab9.4.cgi')
+    .then(response => response.json())
+    .then(response_json => {
+            var time  = response_json.time;
+            console.log(time);
+            document.getElementById("id_time").innerHTML = time;
+            // Recreate a setTimeout API call which will be fired after 1 second.
+            apiTimeout = setTimeout(fetchData, 1);
+    })
+    .catch((error) => {
+         clearTimeout(apiTimeout);
+         console.log(error);    });
+}
+</script>

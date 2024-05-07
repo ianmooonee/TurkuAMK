@@ -1,0 +1,4 @@
+*/10 1-4,6-12 *  JAN-AUG,NOV-DEC * lab4.0-ledoff
+*/10,25,40,55 1-4,6-12 * SEP * lab4.0-ledoff
+*/30 1-4,6-12 * JAN-AUG,NOV-DEC * lab4.0-pump
+*/15 1-4,6-12 * SEP * lab4.0-pump
